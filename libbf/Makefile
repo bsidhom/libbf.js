@@ -41,7 +41,7 @@ else
 EXE:=
 endif
 
-CC=$(CROSS_PREFIX)gcc
+#CC=$(CROSS_PREFIX)gcc
 CFLAGS=-Wall -g $(PROFILE) -MMD
 CFLAGS+=-O2
 CFLAGS+=-flto
@@ -127,7 +127,7 @@ endif
 	$(CC) -m32 $(CFLAGS) -c -o $@ $<
 
 %.avx2.o: %.c
-	$(CC) $(CFLAGS) -mavx -mavx2 -mfma -mbmi2 -c -o $@ $<
+	$(CC) $(CFLAGS) -mavx -mavx2 -mfma -mbmi2 -msimd128 -c -o $@ $<
 
 clean:
 	rm -f $(PROGS) *.o *.d *~
