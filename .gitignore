@@ -1,0 +1,11 @@
+.*.sw[nop]
+
+libbf/**/*.d
+libbf/**/*.o
+libbf/**/*.wasm
+
+# Binaries
+libbf/bfbench
+libbf/bfbench-avx2
+libbf/tinypi
+libbf/tinypi-avx2
