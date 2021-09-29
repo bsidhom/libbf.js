@@ -1,11 +1,15 @@
+*.d
+*.o
+*.wasm
 .*.sw[nop]
+.idea/
 
-libbf/**/*.d
-libbf/**/*.o
-libbf/**/*.wasm
+/env.config
+/libbf_internal.js
 
-# Binaries
-libbf/bfbench
-libbf/bfbench-avx2
-libbf/tinypi
-libbf/tinypi-avx2
+/libbf/**/*.d
+/libbf/**/*.o
+/libbf/bfbench
+/libbf/bfbench-avx2
+/libbf/tinypi
+/libbf/tinypi-avx2
