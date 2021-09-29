@@ -130,6 +130,6 @@ endif
 	$(CC) $(CFLAGS) -mavx -mavx2 -mfma -mbmi2 -msimd128 -c -o $@ $<
 
 clean:
-	rm -f $(PROGS) *.o *.d *~
+	rm -f $(PROGS) *.o *.d *.wasm *~
 
 -include $(wildcard *.d)

@@ -15,7 +15,7 @@ LIBBF_WRAPPER=libbf_internal.js
 all: $(LIBBF_WRAPPER)
 
 clean:
-	rm -f *.o $(LIBBF_WRAPPER)
+	rm -f *.o *.d *.wasm $(LIBBF_WRAPPER)
 
 # TODO: Figure out how to delegate to nested Makefile to create libbf object
 # files. Right now, those need to be built out-of-band by the other Makefile.
